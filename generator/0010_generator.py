@@ -62,4 +62,4 @@ if __name__ == '__main__':
     print("\n\n\nジェネレータ関数のなかでgenerator raised StopIterationを出したい。")
     for itm in wrong_iter():
         print(itm)
-
+    # ↑検証の用は済んだのでほっとく。
