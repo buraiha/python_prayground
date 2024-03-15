@@ -1,5 +1,5 @@
 def test_gene():
-    #print("hoge")
+    # print("hoge")
     yield "a"
     yield "b"
     yield "c"
@@ -16,13 +16,13 @@ def gene_error():
     for i in range(26):
         if i == 12:
             raise StopIteration
-            #raise Exception("エラーだ!!!")
+            # raise Exception("エラーだ!!!")
         yield chr(ord("a") + i)
 
 
 # どうにかして回り切ったイテレータに対してNextしたい。
 def wrong_iter():
-    for i in range(1,10):
+    for i in range(1, 10):
         yield i
 
 
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     itr = iter(range(1, 11))
     tmp = next(itr)
     # itrをforする。2から表示される?
-    for i in range(1,12):
+    for i in range(1, 12):
         print(tmp)
 
     print("\n\n\nジェネレータ関数のなかでgenerator raised StopIterationを出したい。")
