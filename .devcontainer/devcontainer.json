@@ -1,1 +1,16 @@
-{"image":"python:3.11.8-bookworm"}
+{
+    // dockerイメージ設定
+    "image":"python:3.11.8-bookworm",
+    
+    // VS codeのカスタマイズ
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "oderwat.indent-rainbow",
+                "ms-python.flake8"
+            ]
+        }
+    }
+}
