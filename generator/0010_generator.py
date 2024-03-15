@@ -50,7 +50,7 @@ if __name__ == '__main__':
     # for i in range(11):
     #    print(next(itr))
     # ↑のforブロックをコメントアウトするとここでエラー死するのでコメントにしとく
-  
+
     print("\n\n\nループのまえでnext()しておくとその次のやつからループするのか。")
     itr = iter(range(1, 11))
     tmp = next(itr)
