@@ -11,6 +11,19 @@
                 "oderwat.indent-rainbow",
                 "ms-python.flake8"
             ]
-        }
+        },
+
+        // 無定義だとrootで動いてしまうので、ユーザを変更する。
+        "remoteUser": "vscode",
+
+        // コンテナが初めて開始された直後にコンテナ内で実行されます。
+        "onCreateCommand": "",
+
+        // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
+        "updateContentCommand": "",
+
+        // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
+        "postCreateCommand": "",
+
     }
 }
