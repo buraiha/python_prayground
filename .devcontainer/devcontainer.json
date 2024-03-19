@@ -29,15 +29,15 @@
                 "ms-python.flake8"
             ]
         }
-    },
+    }
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    "onCreateCommand": "",
+    //"onCreateCommand": "",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
-    "updateContentCommand": "",
+    //"updateContentCommand": "",
 
     // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
-    "postCreateCommand": ""
+    //"postCreateCommand": ""
 
 }
