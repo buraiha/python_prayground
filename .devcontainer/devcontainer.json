@@ -3,7 +3,6 @@
     "image":"alpine:latest",
     
     // featuresの設定
-    /*
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "username": "vscode",
@@ -11,7 +10,7 @@
             "userGid": "1000",
             "upgradePackages": "true"
         }
-    },*/
+    },
     
     // VS codeのカスタマイズ
     "customizations": {
