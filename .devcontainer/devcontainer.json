@@ -2,6 +2,16 @@
     // dockerイメージ設定
     "image":"python:3.11.8-bookworm",
     
+    // featuresの設定
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2":{
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        }
+    },
+    
     // VS codeのカスタマイズ
     "customizations": {
         // Configure properties specific to VS Code.
