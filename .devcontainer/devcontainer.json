@@ -5,7 +5,6 @@
     // 無定義だとrootで動いてしまうので、ユーザを変更する。
     "remoteUser": "vscode",
  
-    /*
     // featuresの設定
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
@@ -16,7 +15,6 @@
             "upgradePackages": "true"
         }
     },
-    */
 
     
     // VS codeのカスタマイズ
