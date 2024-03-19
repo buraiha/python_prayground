@@ -6,7 +6,7 @@
     "remoteUser": "vscode",
 
     // featuresの設定
-    /* 
+    
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "installZsh": "true",
@@ -14,10 +14,10 @@
             "userUid": "1000",
             "userGid": "1000",
             "upgradePackages": "true"
-        },
+        }
 
     },
-    */
+    
     
     // VS codeのカスタマイズ
     "customizations": {
