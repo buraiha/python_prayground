@@ -1,9 +1,6 @@
 {
     // dockerイメージ設定
     "image":"alpine:latest",
-    
-    // 無定義だとrootで動いてしまうので、ユーザを変更する。
-    "remoteUser": "vscode",
 
     // featuresの設定
     "features": {
@@ -26,6 +23,9 @@
             ]
         },
 
+        // 無定義だとrootで動いてしまうので、ユーザを変更する。
+        "remoteUser": "vscode",
+
         // コンテナが初めて開始された直後にコンテナ内で実行されます。
         "onCreateCommand": "",
 
@@ -33,7 +33,7 @@
         "updateContentCommand": "",
 
         // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
-        "postCreateCommand": "",
+        "postCreateCommand": ""
 
     }
 }
