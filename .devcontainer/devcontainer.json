@@ -1,6 +1,6 @@
 {
     // dockerイメージ設定
-    "image":"alpine:latest",
+    "image":"ubuntu:latest",
     
     // featuresの設定
     "features": {
