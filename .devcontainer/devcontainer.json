@@ -5,8 +5,13 @@
     // featuresの設定
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
             "upgradePackages": "true"
-        }
+        },
+
     },
     
     // VS codeのカスタマイズ
@@ -29,8 +34,6 @@
         // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
         "postCreateCommand": ""
 
-    },
+    }
 
-    // 無定義だとrootで動いてしまうので、ユーザを変更する。
-    "remoteUser": "vscode",
 }
