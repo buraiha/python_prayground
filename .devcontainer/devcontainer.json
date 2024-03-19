@@ -23,9 +23,6 @@
             ]
         },
 
-        // 無定義だとrootで動いてしまうので、ユーザを変更する。
-        "remoteUser": "vscode",
-
         // コンテナが初めて開始された直後にコンテナ内で実行されます。
         "onCreateCommand": "",
 
@@ -35,5 +32,8 @@
         // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
         "postCreateCommand": ""
 
-    }
+    },
+
+    // 無定義だとrootで動いてしまうので、ユーザを変更する。
+    "remoteUser": "vscode",
 }
