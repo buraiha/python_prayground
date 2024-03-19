@@ -5,9 +5,6 @@
     // featuresの設定
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
-            "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000",
             "upgradePackages": "true"
         }
     },
