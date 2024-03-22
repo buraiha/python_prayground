@@ -1,6 +1,6 @@
 {
     // dockerイメージ設定
-    "image":"gcr.io/distroless/static:debug-nonroot",
+    "image":"alpine:latest",
 
     // 無定義だとrootで動いてしまうので、ユーザを変更する。
     //"remoteUser": "vscode",
