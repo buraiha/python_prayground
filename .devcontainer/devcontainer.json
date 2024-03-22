@@ -1,6 +1,6 @@
 {
     // dockerイメージ設定
-    "image":"gcr.io/distroless/python3-debian12:latest",
+    "image":"gcr.io/distroless/static:debug-nonroot",
 
     // 無定義だとrootで動いてしまうので、ユーザを変更する。
     //"remoteUser": "vscode",
