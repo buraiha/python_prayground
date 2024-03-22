@@ -1,6 +1,6 @@
 {
     // dockerイメージ設定
-    "image":"alpine:latest",
+    "image":"gcr.io/distroless/python3-debian12:latest",
 
     // 無定義だとrootで動いてしまうので、ユーザを変更する。
     //"remoteUser": "vscode",
