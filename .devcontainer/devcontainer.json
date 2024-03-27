@@ -1,12 +1,8 @@
 {
     // dockerイメージ設定
     "image":"alpine:latest",
-
-    // 無定義だとrootで動いてしまうので、ユーザを変更する。
-    //"remoteUser": "vscode",
  
     // featuresの設定
-    /*
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "installZsh": "true",
@@ -16,8 +12,6 @@
             "upgradePackages": "true"
         }
     },
-    */
-
     
     // VS codeのカスタマイズ
     "customizations": {
@@ -29,15 +23,19 @@
                 "ms-python.flake8"
             ]
         }
-    }
+    },
+    
+    // 無定義だとrootで動いてしまうので、ユーザを変更する。
+    "remoteUser": "vscode",
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    //"onCreateCommand": "",
+    "onCreateCommand": "",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
-    //"updateContentCommand": "",
+    "updateContentCommand": "",
 
     // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
-    //"postCreateCommand": ""
+    // 基本的にはここに環境features等で設定する以外のコンテナ特有のスクリプトを記述する。
+    "postCreateCommand": ""
 
 }
