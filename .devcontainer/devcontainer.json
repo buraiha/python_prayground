@@ -1,6 +1,7 @@
 {
     // dockerイメージ設定
     "image": "mcr.microsoft.com/devcontainers/universal:linux",
+    // 上記ユニバーサルコンテナを利用した場合は、featuresの設定およびremoteUserの設定は不要とする。
  
     // featuresの設定
     /*
