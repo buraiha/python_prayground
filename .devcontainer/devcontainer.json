@@ -27,7 +27,7 @@
     },
     
     // 無定義だとrootで動いてしまうので、ユーザを変更する。
-    "remoteUser": "vscode",
+    //"remoteUser": "vscode",
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
     "onCreateCommand": "",
