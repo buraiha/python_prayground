@@ -1,6 +1,6 @@
 {
     // dockerイメージ設定
-    "image": "mcr.microsoft.com/devcontainers/universal:dev-linux",
+    "image": "mcr.microsoft.com/devcontainers/universal:latest",
  
     // featuresの設定
     "features": {
