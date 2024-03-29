@@ -3,21 +3,20 @@
     "image": "mcr.microsoft.com/devcontainers/universal:linux",
     // 上記ユニバーサルコンテナを利用した場合は、featuresの設定およびremoteUserの設定は不要とする。
  
-    // featuresの設定
     /*
+    // featuresの設定
     "features": {
         "ghcr.io/devcontainers/features/common-utils:latest":{
             "installZsh": "true",
             "username": "vscode",
             "userUid": "1000",
             "userGid": "1000"
-        }
-    },
-    "features": {
+        },
         "ghcr.io/devcontainers/features/python:latest":{
             "version": "3.12.2"
         }
-    },*/
+    },
+    */
     
     // VS codeのカスタマイズ
     "customizations": {
