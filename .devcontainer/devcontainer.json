@@ -3,6 +3,7 @@
     "image":"mcr.microsoft.com/devcontainers/universal:linux",
  
     // featuresの設定
+    /*
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2":{
             "installZsh": "true",
@@ -11,7 +12,7 @@
             "userGid": "1000",
             "upgradePackages": "true"
         }
-    },
+    },*/
     
     // VS codeのカスタマイズ
     "customizations": {
