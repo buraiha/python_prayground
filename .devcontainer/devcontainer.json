@@ -4,20 +4,11 @@
     // 上記ユニバーサルコンテナを利用した場合は、featuresの設定およびremoteUserの設定は不要。指定すると動かないよ。
     // ユニバーサルコンテナの中でcodespaceユーザは作成されるので、remoteUserは"codespace"で指定できる。
  
-    /*
     // featuresの設定
+    // ユニバーサルコンテナを使用しているが、common-utilsを指定してbuildしてみる。
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:latest":{
-            "installZsh": "true",
-            "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000"
-        },
-        "ghcr.io/devcontainers/features/python:latest":{
-            "version": "3.12.2"
-        }
+        "ghcr.io/devcontainers/features/common-utils:latest":{}
     },
-    */
     
     // VS codeのカスタマイズ
     "customizations": {
@@ -33,16 +24,16 @@
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
-    "remoteUser": "codespace",
+    // "remoteUser": "",
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    "onCreateCommand": "",
+    // "onCreateCommand": "",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
-    "updateContentCommand": "",
+    // "updateContentCommand": "",
 
     // updateContentCommand の後に dev コンテナが初めてユーザーに割り当てられたときに実行されます。
     // 基本的にはここに環境features等で設定する以外のコンテナ特有のスクリプトを記述する。
-    "postCreateCommand": ""
+    // "postCreateCommand": ""
 
 }
