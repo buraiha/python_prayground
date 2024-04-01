@@ -12,13 +12,18 @@
             "username": "vscodetest",
             "userUid": "1024",
             "userGid": "1024"
-        },
+        }
         /*
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "3.12.2"
         }
         */
     },
+    
+    // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
+    // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
+    // mcr.microsoft.com/devcontainers/universal:linuxはcodespaceユーザがデフォルトで作成されるので、指定しておく。
+    "remoteUser": "vscodetest",
     
     // VS codeのカスタマイズ
     "customizations": {
@@ -31,11 +36,6 @@
             ]
         }
     },
-    
-    // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
-    // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
-    // mcr.microsoft.com/devcontainers/universal:linuxはcodespaceユーザがデフォルトで作成されるので、指定しておく。
-    "remoteUser": "codespace"
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
     // "onCreateCommand": "",
