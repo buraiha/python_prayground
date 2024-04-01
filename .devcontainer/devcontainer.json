@@ -8,9 +8,9 @@
     // ユニバーサルコンテナを使用しているが、common-utilsを指定してbuildしてみる。
     "features": {
         "ghcr.io/devcontainers/features/common-utils:latest":{
-            "username": "codespace",
-            "userUid": "1000",
-            "userGid": "1000"
+            "username": "test",
+            "userUid": "1001",
+            "userGid": "1001"
         }
     },
     
@@ -28,7 +28,7 @@
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
-    "remoteUser": "codespace",
+    "remoteUser": "test",
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
     // "onCreateCommand": "",
