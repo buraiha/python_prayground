@@ -1,8 +1,6 @@
 {
     // dockerイメージ設定
     "image": "mcr.microsoft.com/devcontainers/universal:linux",
-    // 上記ユニバーサルコンテナを利用した場合は、featuresの設定およびremoteUserの設定は不要。指定すると動かないよ。
-    // ユニバーサルコンテナの中でcodespaceユーザは作成されるので、remoteUserは"codespace"で指定できる。
  
     // featuresの設定
     // ユニバーサルコンテナを使用しているが、common-utilsを指定してbuildしてみる。
