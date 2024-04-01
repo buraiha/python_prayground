@@ -2,21 +2,22 @@
     // dockerイメージ設定
     // 開発用言語概ね入りの便利ユニバーサルイメージ: mcr.microsoft.com/devcontainers/universal:linux
     // 軽量イメージ: alpine:latest
-    "image": "mcr.microsoft.com/devcontainers/universal:linux",
+    // "image": "mcr.microsoft.com/devcontainers/universal:linux",
+    "image": "alpine:latest",
  
     // featuresの設定
     // ユニバーサルコンテナを使用しているが、common-utilsを指定してbuildしてみる。
     "features": {
-        /*
         "ghcr.io/devcontainers/features/common-utils:latest":{
-            "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000"
+            "username": "vscodetest",
+            "userUid": "1024",
+            "userGid": "1024"
         },
-        */
+        /*
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "3.12.2"
         }
+        */
     },
     
     // VS codeのカスタマイズ
