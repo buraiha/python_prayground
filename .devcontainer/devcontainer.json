@@ -1,4 +1,7 @@
 {
+    // A name for the dev container displayed in the UI.
+    "name": "Python Praygroundです",
+    
     // dockerイメージ設定
     // 開発用言語概ね入りの便利ユニバーサルイメージ: mcr.microsoft.com/devcontainers/universal:linux
     // 軽量イメージ: alpine:latest
