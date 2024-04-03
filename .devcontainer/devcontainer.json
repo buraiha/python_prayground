@@ -1,32 +1,32 @@
 {
     // A name for the dev container displayed in the UI.
-    "name": "Python Praygroundです",
+    "name": "Knowledge-base codespace",
     
     // dockerイメージ設定
     // 開発用言語概ね入りの便利ユニバーサルイメージ: mcr.microsoft.com/devcontainers/universal:linux
     // 軽量イメージ: alpine:latest
     // "image": "mcr.microsoft.com/devcontainers/universal:linux",
-    "image": "alpine:latest",
+    "image": "mcr.microsoft.com/devcontainers/universal:linux",
  
     // featuresの設定
-    // ユニバーサルコンテナを使用しているが、common-utilsを指定してbuildしてみる。
+    // ユニバーサルコンテナを使用している場合は、codespaceユーザで起動する。
     "features": {
+        /*
         "ghcr.io/devcontainers/features/common-utils:latest":{
             "username": "vscodetest",
             "userUid": "1024",
             "userGid": "1024"
-        }
-        /*
+        },
+        */
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "3.12.2"
         }
-        */
     },
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
-    // mcr.microsoft.com/devcontainers/universal:linuxはcodespaceユーザがデフォルトで作成されるので、指定しておく。
-    "remoteUser": "",
+    // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成されるので、指定しておく。
+    "remoteUser": "codespace",
     
     // VS codeのカスタマイズ
     "customizations": {
@@ -34,8 +34,13 @@
         "vscode": {
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
+                "ms-python.flake8",
+                "dbaeumer.vscode-eslint",
+                "mhutchie.git-graph",
+                "eamodio.gitlens",
                 "oderwat.indent-rainbow",
-                "ms-python.flake8"
+                "alexcvzz.vscode-sqlite",
+                "tomoki1207.pdf"
             ]
         }
     },
