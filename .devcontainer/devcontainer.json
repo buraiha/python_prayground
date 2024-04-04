@@ -1,6 +1,6 @@
 {
     // A name for the dev container displayed in the UI.
-    //"name": "Knowledge-base codespace",
+    "name": "Knowledge-base codespace",
     
     // dockerイメージ設定
     // 開発用言語概ね入りの便利ユニバーサルイメージ: mcr.microsoft.com/devcontainers/universal:linux
@@ -8,18 +8,16 @@
     "image": "mcr.microsoft.com/devcontainers/universal:2-focal",
 
     // featuresの設定
-    /*
     "features": {
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "3.12.2"
         }
     },
-    */
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
     // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成されるので、指定しておく。
-    //"remoteUser": "codespace",
+    "remoteUser": "codespace",
     
     // VS codeのカスタマイズ
     "customizations": {
