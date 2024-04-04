@@ -1,5 +1,6 @@
 import datetime
 
+
 def my_logger(f):
     def _wrapper(*args, **keywords):
         # 前処理
@@ -15,6 +16,7 @@ def my_logger(f):
 
         return v
     return _wrapper
+
 
 @my_logger
 def return_one():
