@@ -6,7 +6,7 @@
     // 開発用言語概ね入りの便利ユニバーサルイメージ: https://github.com/devcontainers/images/tree/main/src/universal
     // 上記
     // alpine: alpine:latest
-    "image": "mcr.microsoft.com/devcontainers/python:3",
+    "image": "mcr.microsoft.com/devcontainers/universal:linux",
 
     // featuresの設定
     /*
@@ -40,7 +40,7 @@
     },
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    // "onCreateCommand": "",
+    // "onCreateCommand": "codespace",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
     // "updateContentCommand": "",
