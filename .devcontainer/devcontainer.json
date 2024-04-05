@@ -6,7 +6,7 @@
     // 開発用言語概ね入りの便利ユニバーサルイメージ: https://github.com/devcontainers/images/tree/main/src/universal
     // 上記ユニバーサルイメージのタグにlinuxとか使うとどうもcodespacesでは動かないので、"2" or "latest"を使用する。
     // alpine: alpine:latest
-    "image": "mcr.microsoft.com/devcontainers/universal:2.9.0-focal",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
 
     // featuresの設定
     //"features": {
