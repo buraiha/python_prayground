@@ -40,7 +40,7 @@
     },
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    // "onCreateCommand": "codespace",
+    // "onCreateCommand": "codespaces",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
     // "updateContentCommand": "",
