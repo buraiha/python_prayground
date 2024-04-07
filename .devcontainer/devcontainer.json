@@ -20,7 +20,7 @@
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
     // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成されるので、指定しておく。
-    "remoteUser": "",
+    "remoteUser": "codespaces",
     
     // VS codeのカスタマイズ
     "customizations": {
@@ -40,7 +40,7 @@
     },
     
     // コンテナが初めて開始された直後にコンテナ内で実行されます。
-    // "onCreateCommand": "codespaces",
+    // "onCreateCommand": "",
 
     // 作成プロセス中に新しいコンテンツがソースツリーで利用可能になるたびに、onCreateCommand の後にコンテナ内で実行されます。
     // "updateContentCommand": "",
