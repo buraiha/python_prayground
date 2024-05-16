@@ -1,5 +1,6 @@
 {
-    // A name for the dev container displayed in the UI.
+    // ナレッジベース用codespaceコンテナ。
+    // プログラム言語のplay around用が主な用途。
     "name": "Knowledge-base codespace",
     
     // dockerイメージ設定
