@@ -4,17 +4,20 @@
     
     // dockerイメージ設定
     // 開発用言語概ね入りの便利ユニバーサルイメージ: https://github.com/devcontainers/images/tree/main/src/universal
-    // 上記ユニバーサルイメージは"2"や"latest"以外はコンテナのビルドから走るので、codespaceの2cpuサイズではりそーす不足でビルドできなくてエラーとなる。
+    // image指定方法: "image": "mcr.microsoft.com/devcontainers/universal:latest",
+    // 上記ユニバーサルイメージは"2"や"latest"以外はコンテナのビルドから走るので、
+    // codespaceの2cpuサイズではリソース不足でビルドできなくてエラーとなる。
     // それよりももっと上のサイズで作りましょう。
     "image": "mcr.microsoft.com/devcontainers/universal:latest",
 
     // featuresの設定
-    /*
+    // ユニバーサルイメージを使った場合はおおむねの言語はインストールされているが、
+    // 細かくバージョン指定する場合はfeaturesを使用する。
     "features": {
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "latest"
         }
-    },*/
+    },
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
