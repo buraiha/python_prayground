@@ -24,7 +24,7 @@
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
     // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成されるので、指定しておく
     // (デフォルトユーザとして設定されているので指定する必要はないが)。
-    "remoteUser": "codespax",
+    "remoteUser": "codespace",
     
     // VS codeのカスタマイズ
     "customizations": {
