@@ -8,7 +8,7 @@
     // 上記ユニバーサルイメージは"latest"タグ以外はコンテナのビルドから走るみたいなので、
     // codespaceの最小サイズ(2cpu)ではリソース不足でビルドできなくてエラーとなる。
     // それよりももっと上のサイズで作りましょう。
-    "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+    "image": "mcr.microsoft.com/vscode/devcontainers/universal:2.9.0-focal",
 
     // featuresの設定
     // ユニバーサルイメージを使った場合はおおむねの言語はインストールされているが、
