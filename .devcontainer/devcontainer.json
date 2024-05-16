@@ -22,9 +22,10 @@
 */
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
-    // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成されるので、指定しておく
-    // (デフォルトユーザとして設定されているので指定する必要はないが)。
-    "remoteUser": "codespace",
+    // ユニバーサルコンテナの場合はcodespaceユーザがデフォルトで作成される。
+    // ユニバーサルコンテナを作り出すdevconatinerの中でfeatures/common-utilsを使っており、さらにremoteuserとして
+    // codesspaceが指定されているのでここでは指定不要。
+    // "remoteUser": "codespace",
     
     // VS codeのカスタマイズ
     "customizations": {
