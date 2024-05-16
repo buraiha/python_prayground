@@ -13,11 +13,11 @@
     // featuresの設定
     // ユニバーサルイメージを使った場合はおおむねの言語はインストールされているが、
     // 細かくバージョン指定する場合はfeaturesを使用する。
-/*    "features": {
+    "features": {
         "ghcr.io/devcontainers/features/python:1.4":{
             "version": "latest"
         }
-    },*/
+    },
     
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
