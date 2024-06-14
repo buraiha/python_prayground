@@ -16,10 +16,10 @@
     // ユニバーサルイメージを使った場合はおおむねの言語はインストールされているが、
     // 細かくバージョン指定する場合はfeaturesを使用する。
 
-    // python最新バージョンを入れる。
+    // python最新バージョンを入れる(latestだと最新入らないのでバージョン指定)。
     "features": {
         "ghcr.io/devcontainers/features/python:latest":{
-            "version": "latest"
+            "version": "3.12.4"
         }
     },
 
