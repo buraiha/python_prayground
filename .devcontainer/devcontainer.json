@@ -9,7 +9,7 @@
     // 上記ユニバーサルイメージは"2"タグ以外はコンテナのビルドから走るみたいなので、
     // codespaceの最小サイズ(2cpu)ではリソース不足でビルドできなくてエラーとなる。
     // それよりももっと上のサイズで作りましょう。
-    "image": "mcr.microsoft.com/devcontainers/universal:linux",
+    "image": "mcr.microsoft.com/devcontainers/universal:focal",
 
     // featuresの設定
     // ユニバーサルイメージを使った場合はおおむねの言語はインストールされているが、
