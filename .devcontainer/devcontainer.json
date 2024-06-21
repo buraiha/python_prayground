@@ -17,11 +17,13 @@
     // 細かくバージョン指定する場合はfeaturesを使用する。
 
     // python最新バージョンを入れる(latestだと最新入らないのでバージョン指定)。
+    /*
     "features": {
         "ghcr.io/devcontainers/features/python:latest":{
             "version": "3.12.4"
         }
     },
+    */
 
     // 無定義だとrootで動いてしまうので、必要であればユーザを変更する。
     // features/common-utils なりほかの方法なりで、あらかじめ下記で指定したユーザーが作成されている必要がある。
