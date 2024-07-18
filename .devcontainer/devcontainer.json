@@ -42,7 +42,8 @@
                 "eamodio.gitlens",
                 "oderwat.indent-rainbow",
                 "alexcvzz.vscode-sqlite",
-                "tomoki1207.pdf"
+                "tomoki1207.pdf",
+                "ms-vsliveshare.vsliveshare"
             ]
         }
     },
